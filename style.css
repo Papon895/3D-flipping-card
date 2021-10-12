@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to left bottom, #587324, #368853, #009987, #00a6b8, #41b0dd);
+}
+html {
+  font-size: 62.5%;
+}
+.card {
+  width: 25%;
+  height: 37rem;
+  position: relative;
+  transition: 1s; 
+  perspective: 2000px;
+  transform-style: preserve-3d;
+}
+
+.front-card {
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #353b48;
+  
+  border-radius: 1rem;
+  perspective: 2000px;
+  transform-style: preserve-3d;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+
+img {
+  width: 1rem;
+}
+.iphone {
+  padding-left: 1rem;
+transform: translateZ(100px);
+backface-visibility: hidden;
+}
+.iphone img {
+  width: 18rem;
+  margin: 5px auto 0 5px;
+  
+}
+.iphone-text {
+  transform: translateZ(100px);
+}
+.iphone-text h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.6rem;
+  margin-top: -10px;
+  letter-spacing: 3px;
+  transform: translateZ(80px);
+  backface-visibility: hidden;
+}
+.i {
+  color: rgb(5,168,193);
+}
+.phone {
+  color:rgb(211,7,139);
+}
+.thirteen {
+  color: rgb(164,73,194);
+}
+    /*back card*/
+    
+.back-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(225,227,229);
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  transform: rotateY(0);
+  transition: 1s;
+  padding: 1rem;
+  color: black;
+  perspective: 2000px;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.back-card .logo {
+  width: 3rem;
+}
+.text-area {
+  text-align: center;
+    perspective: 2000px;
+  transform-style: preserve-3d;
+}
+.text-area h2 {
+  padding-top: 2.3rem;
+  margin: 0 0 -2rem 0;
+  font-size: 2.7rem;
+  transform: translateZ(100px);
+  backface-visibility: hidden;
+}
+.text-area .space {
+  padding-top: 7px;
+  font-size: 1.3rem;
+  color: rgb(74,7,7);
+  transform: translateZ(50px);
+  backface-visibility: hidden;
+}
+.text-area .hr {
+  width: 84%;
+  border-bottom: 0.7px solid #5c5555;
+  margin: 3px auto 13px auto;
+  transform: translateZ(40px);
+  backface-visibility: hidden;
+}
+.details {
+  text-align:left;
+  padding: 1rem;
+  width: 79%;
+  margin: 0 auto;
+  background-color: rgba(183,182,182,0.5);
+  border-radius: 5px;
+  transform: translateZ(100px);
+  backface-visibility: hidden;
+}
+.details .camera {
+  padding-bottom: 5px;
+}
+.details h5 {
+  font-size: 1.2rem;
+  color: rgb(102,102,102);
+}
+.details img {
+  margin: 0 5px -2px 0;
+  
+}
+.details small {
+  margin-left: 20px;
+  color:rgb(91,91,91);
+}
+.details h5 {
+  display: inline;
+}
+.details img {
+  width: 1.2rem;
+}
+.details small {
+  display: block;
+}
+.details .more {
+  text-decoration: none;
+  color: grey;
+  font-size: 1rem;
+}
+.details .more:hover {
+  text-decoration: underline;
+}
+.lg-btn {
+  width: 85%;
+  margin: 85px auto 0 auto;
+  background-color: white;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  backface-visibility: hidden;
+  transform: translateZ(110px);
+}
+.lg-btn .order {
+  width: 50%;
+  background-color: #7e2c2c;
+  padding: 1rem 0;
+  display: inline;
+  border-radius: 2rem;
+  color: white;
+}
+.lg-btn .chart {
+  width: 50%;
+  padding: 1rem 0;
+  display: inline;
+}
+
+.chart:hover .order {
+  background-color: white;
+}
+
+
+
+
+
+.card:hover .front-card {
+  transform: rotateY(-180deg);
+}
+.card:hover .back-card {
+  transform: rotateY(0);
+}
+    /* catd 2 start*/
+.watch {
+  padding-top: 55px;
+}
+.card-2-iphone {
+  padding-top: 60px;
+}
+.watch-text {
+  color: lightgrey;
+}
+.watch-text2 {
+  color: #fadd6d;
+}
+.card2-front {
+  background-color: #889e15;
+}
+    /* catd 2 ends*/
+    
+    /* catd 3 start*/
+.pod {
+  padding: 70px 0 0 10px;
+}
+.pod-text {
+  padding-top: 55px;
+}
+.pod-text2 {
+  color: rgb(176,241,40);
+}
+.air {
+  color: rgb(202,112,174);
+}
+.fas {
+  margin-right: 5px;
+}
+
+    /* catd 3 ends*/
+    
+    /*--responshib section---*/
+    
+@media (max-width:410px) {
+   .container {
+     padding: 50px;
+     height: auto;
+   }
+  .card {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+}
